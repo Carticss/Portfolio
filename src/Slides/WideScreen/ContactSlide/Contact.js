@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import twitterImg from '../../../Assets/Images/Social/twitter.svg';
 import githubImg from '../../../Assets/Images/Social/git.svg';
 import mailImg from '../../../Assets/Images/Social/mail.svg';
-import instaImg from '../../../Assets/Images/Social/insta.svg';
-import dribbbleImg from '../../../Assets/Images/Social/dribbble.svg';
 import linkedInImg from '../../../Assets/Images/Social/linkedin.svg';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
@@ -28,7 +25,6 @@ const ContactTitle = styled.div.attrs({
   position: absolute;
   color: #EEE;
   top:12%;
-  left:-70%;
   @media ${device.laptop} {
     font-size: 180px;
   }
@@ -57,7 +53,7 @@ class Contact extends Component {
     this.state = {
       screenHeight: 0,
       scrollHeight: 0,
-      scrollPercent: 0,
+      scrollPercent: 10,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -75,8 +71,8 @@ class Contact extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 1040) / documentElement.scrollHeight;
+    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 10);
+    const minlimit = (documentElement.clientHeight * 10) / documentElement.scrollHeight;
     if (sp >= minlimit && sp <= 100) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
@@ -89,12 +85,9 @@ class Contact extends Component {
       <Container>
         <ContactTitle scrollPercent={scrollPercent}>CONTACT</ContactTitle>
         <SocialMediaIcons>
-          <SocialLogo imgURL={twitterImg} alternate="Twitter" redirectURL="https://twitter.com/sureshmurali29" />
-          <SocialLogo imgURL={githubImg} alternate="Github" redirectURL="https://github.com/sureshmurali" />
-          <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:sureshmurali29@gmail.com" />
-          <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/sureshmurali_/" />
-          <SocialLogo imgURL={dribbbleImg} alternate="Dribbble" redirectURL="https://dribbble.com/sureshmurali29" />
-          <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/sureshmurali29" />
+          <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:juandiegogomez201094@gmail.com" />
+          <SocialLogo imgURL={githubImg} alternate="Github" redirectURL="https://github.com/carticss" />
+          <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/juan-diego-mg-carticss/" />
         </SocialMediaIcons>
       </Container>
     );

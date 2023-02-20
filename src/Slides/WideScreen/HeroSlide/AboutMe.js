@@ -3,24 +3,24 @@ import styled from 'styled-components';
 import device from '../../../Assets/Responsive/breakpoints';
 
 const Container = styled.section`
-    height: 40vh;/* Since pageSplitTime is 1.4 */
-    width:100%;
-    /* border: 1px solid blue; */
-    position: relative;
-    overflow: hidden;
+  height: 40vh; /* Since pageSplitTime is 1.4 */
+  width: 100%;
+  /* border: 1px solid blue; */
+  position: relative;
+  overflow: hidden;
 `;
 
 const AboutMeTitle = styled.div.attrs({
   style: ({ scrollPercent }) => ({
-    transform: `translateX(${(scrollPercent) * 5.5}%)`,
+    transform: `translateX(${scrollPercent * 5.5}%)`,
   }),
 })`
   transition: transform 0.5s ease-out;
-  font-family: 'AvenirHeavy';
+  font-family: "AvenirHeavy";
   position: absolute;
-  color: #EEE;
-  top:5%;
-  left:-15%;
+  color: #eee;
+  top: 5%;
+  left: -15%;
   @media ${device.laptop} {
     font-size: 180px;
   }
@@ -34,12 +34,12 @@ const AboutMeTitle = styled.div.attrs({
 
 const AboutMeDescription = styled.div`
   align-items: center;
-  font-family: 'AvenirLight';
+  font-family: "AvenirLight";
   text-align: left;
   margin-left: 30%;
   margin-right: 5%;
   @media ${device.laptop} {
-    transform: translateY(90%);
+    transform: translateY(87%);
     font-size: 30px;
   }
   @media ${device.laptopL} {
@@ -72,7 +72,8 @@ class AboutMe extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    const sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
+    const sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight))
+      * 100;
     const maxlimit = (documentElement.clientHeight * 150) / documentElement.scrollHeight;
     if (sp >= 0 && sp <= maxlimit) {
       this.setState({ scrollPercent: sp });
@@ -85,8 +86,9 @@ class AboutMe extends Component {
       <Container>
         <AboutMeTitle scrollPercent={scrollPercent}>ABOUT ME</AboutMeTitle>
         <AboutMeDescription>
-        Front-end developer who cares deeply about user experience.
-        Serious passion for UI design and new technologies.
+          A dedicated and creative Front End Engineer with a focus on delivering
+          exceptional user experiences. Possesses strong communication,
+          collaboration, and problem-solving skills.
         </AboutMeDescription>
       </Container>
     );

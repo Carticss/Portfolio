@@ -79,9 +79,9 @@ class Skills extends Component {
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
-    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 100);
-    const minlimit = (documentElement.clientHeight * 950) / documentElement.scrollHeight;
-    const maxlimit = (documentElement.clientHeight * 1180) / documentElement.scrollHeight;
+    let sp = (sd / (documentElement.scrollHeight - documentElement.clientHeight) * 30);
+    const minlimit = (documentElement.clientHeight * 1) / documentElement.scrollHeight;
+    const maxlimit = (documentElement.clientHeight * 170) / documentElement.scrollHeight;
     if (sp >= minlimit && sp <= maxlimit + 3) {
       sp -= minlimit;
       this.setState({ scrollPercent: sp });
@@ -95,14 +95,14 @@ class Skills extends Component {
         <SkillsTitle scrollPercent={scrollPercent}>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
-            Design system
+            Systems Designer
             <br />
-            Wireframing & Prototyping
+            Project Management
             <br />
-            Visual Communication
+            Architecture Designer
             <br />
             <br />
-            Figma
+            Proficient
             <br />
             Sketch
             <br />
@@ -121,7 +121,7 @@ class Skills extends Component {
             <br />
             React Native
             <br />
-            Node JS
+            Kotlin
             <br />
           </div>
         </SkillsList>

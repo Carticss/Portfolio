@@ -4,15 +4,11 @@ import PropTypes from 'prop-types';
 import vhCheck from 'vh-check';
 import VoistrapImages from './ParallaxImages/VoistrapImages';
 import WhatsMyFoodImages from './ParallaxImages/WhatsMyFoodImages';
-import ComingOrNotImages from './ParallaxImages/ComingOrNotImages';
-import TeslaImages from './ParallaxImages/TeslaImages';
-import KosenImages from './ParallaxImages/KosenImages';
-import VoistrapWebImages from './ParallaxImages/VoistrapWebImages';
 
 const ImageContainer = styled.div`
 /* border: 0.1px dashed black; */
 width:100%;
-height:900vh;
+height:350vh;
 margin-bottom:30vh;
 display: flex;
 flex-flow: column nowrap;
@@ -81,42 +77,6 @@ class ImageContent extends Component {
           <WhatsMyFoodImages
             boxHeight={boxHeight}
             index={2}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
-        </ImageBox>
-        <ImageBox height={boxHeight}>
-          <ComingOrNotImages
-            boxHeight={boxHeight}
-            index={3}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
-        </ImageBox>
-        <ImageBox height={boxHeight}>
-          <TeslaImages
-            boxHeight={boxHeight}
-            index={4}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
-        </ImageBox>
-        <ImageBox height={boxHeight}>
-          <KosenImages
-            boxHeight={boxHeight}
-            index={5}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
-        </ImageBox>
-        <ImageBox height={boxHeight}>
-          <VoistrapWebImages
-            boxHeight={boxHeight}
-            index={6}
             scrollPercent={scrollPercent}
             screenHeight={screenHeight}
             scrollHeight={scrollHeight}

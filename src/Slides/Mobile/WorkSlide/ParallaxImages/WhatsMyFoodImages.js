@@ -8,7 +8,7 @@ import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
 
 const Restaurant = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 10}%) scale(0.7)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -22,7 +22,7 @@ height: 80vh;
 
 const Home = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.62)`,
+    transform: `translate(0px,-${(scroll) * 6.5}%) scale(0.62)`,
   }),
 })`
 transition: transform 0.2s ease-out;
