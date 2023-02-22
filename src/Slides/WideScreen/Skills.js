@@ -95,7 +95,7 @@ class Skills extends Component {
         <SkillsTitle scrollPercent={scrollPercent}>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
-            Systems Designer
+          Systems Designer
             <br />
             Project Management
             <br />
@@ -104,17 +104,15 @@ class Skills extends Component {
             <br />
             Proficient
             <br />
-            Sketch
+            GRPC
             <br />
-            P5 JS
+            Vue.js
             <br />
-          </div>
-          <div>
             Responsive & Adaptive Design
             <br />
-            Styling Architecture
-            <br />
             UI Maintenance
+            <br />
+            Flutter
             <br />
             <br />
             React

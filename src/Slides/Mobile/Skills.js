@@ -79,33 +79,32 @@ class Skills extends Component {
       <Container>
         <SkillsTitle>SKILLS</SkillsTitle>
         <SkillsList>
-          <div>
+        <div>
+            Systems Designer
+            <br />
+            Project Management
+            <br />
+            Architecture Designer
+            <br />
+            <br />
+            Proficient
+            <br />
+            GRPC
+            <br />
+            Vue.js
+            <br />
+            Responsive & Adaptive Design
+            <br />
+            UI Maintenance
+            <br />
+            Flutter
+            <br />
+            <br />
             React
             <br />
             React Native
             <br />
-            Node.js
-            <br />
-            <br />
-            Rapid Prototyping
-            <br />
-            Functional Programming
-            <br />
-            Interaction Development
-            <br />
-            <br />
-            Responsive Design
-            <br />
-            Testing & Debugging
-            <br />
-            Application Architecture
-            <br />
-            <br />
-            Figma & Sketch
-            <br />
-            Design system
-            <br />
-            Abstract
+            Kotlin
             <br />
           </div>
         </SkillsList>
