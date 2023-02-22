@@ -79,7 +79,7 @@ class Skills extends Component {
       <Container>
         <SkillsTitle>SKILLS</SkillsTitle>
         <SkillsList>
-        <div>
+          <div>
             Systems Designer
             <br />
             Project Management
@@ -92,6 +92,7 @@ class Skills extends Component {
             GRPC
             <br />
             Vue.js
+            <br />
             <br />
             Responsive & Adaptive Design
             <br />
@@ -112,5 +113,7 @@ class Skills extends Component {
     );
   }
 }
+
+
 
 export default Skills;

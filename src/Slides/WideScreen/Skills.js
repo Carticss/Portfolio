@@ -95,7 +95,7 @@ class Skills extends Component {
         <SkillsTitle scrollPercent={scrollPercent}>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
-          Systems Designer
+            Systems Designer
             <br />
             Project Management
             <br />
@@ -108,6 +108,8 @@ class Skills extends Component {
             <br />
             Vue.js
             <br />
+          </div>
+          <div>
             Responsive & Adaptive Design
             <br />
             UI Maintenance
